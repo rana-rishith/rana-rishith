@@ -10,7 +10,7 @@ Medical Image Captioning — Multimodal system combining ViT-Base + Phi-2 (2.7B)
 Languages: Python, Java, SQL, C
 ML/DL: PyTorch, HuggingFace Transformers, PEFT/LoRA
 Tools: Git, Linux, RunPod, Jupyter, VScode
-Interests: Multimodal LLMs, AI Engineering, Computer Vision, NLP, Efficient Fine-Tuning
+Interests: Multimodal LLMs, AI Engineering, Automations, Computer Vision, NLP, Efficient Fine-Tuning
 
 📫 Let's Connect
 LinkedIn: https://www.linkedin.com/in/rana-rishith-musunuri/
