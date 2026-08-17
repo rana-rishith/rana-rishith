@@ -20,4 +20,4 @@ Email: ranarishith.24@gmail.com
                       
                       
                       
-                     ** Open to research, technical internships, AI engineering roles, and collaborations in deep learning and multimodal AI. **
+    ** Open to research, technical internships, AI engineering roles and collaborations in deep learning and multimodal AI. **
