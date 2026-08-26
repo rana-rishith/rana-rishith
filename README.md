@@ -2,7 +2,7 @@
 
 <p align="center">
 B.Tech Information Technology @ Manipal University Jaipur<br>
-I train models at the intersection of vision and language — and I write about it too.
+I train models at the intersection of vision and language and I write about it too.
 </p>
 
 <p align="center">
@@ -22,7 +22,7 @@ I train models at the intersection of vision and language — and I write about 
 
 Beats DS@BioMed on every metric, edges Kaprov on METEOR, trails CS_Morgan. Written up for Springer LNCS as an efficiency result: one consumer GPU instead of a cluster. Also documents a mode-collapse failure mode, caught with a zeros-gap test that checks whether the model is really using the image.
 
-**🧭 Failure Direction** — Speech enhancement fails two opposite ways: deletes the words, or leaves the noise. I built a reference-free index that tells the two apart and now use it to predict, from the noisy input alone, which failure a model will hit — even on unseen noise. Currently at the go/no-go gate before the prediction stage.
+**🧭 Failure Direction** — Speech enhancement fails two opposite ways: deletes the words, or leaves the noise. I built a reference-free index that tells the two apart and now use it to predict, from the noisy input alone, which failure a model will hit even on unseen noise. Currently at the go/no-go gate before the prediction stage.
 
 **🧠 GiWaLM** — 125M-parameter language model, pretrained from scratch on ~1B tokens with a custom 32K BPE tokenizer.
 
