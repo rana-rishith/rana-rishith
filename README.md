@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=28&duration=3000&pause=800&color=D97757&center=true&vCenter=true&width=640&lines=Hey%2C+I'm+Rana+%F0%9F%91%8B;I+teach+models+to+read+X-rays.;I+train+LLMs+from+scratch.;I+measure+how+models+fail." alt="Typing intro" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=28&duration=3000&pause=800&color=D97757&center=true&vCenter=true&width=680&lines=Hey%2C+I'm+Rana+%F0%9F%91%8B;I+teach+models+to+read+X-rays.;I+predict+when+models+will+fail.;I+train+LLMs+from+scratch." alt="Typing intro" />
 
 **B.Tech IT @ Manipal University Jaipur** · vision + language · one GPU at a time
 
@@ -12,51 +12,51 @@
 
 ---
 
-```python
-rana = {
-    "studying":  "B.Tech Information Technology, MUJ",
-    "building":  ["multimodal LLMs", "LMs from scratch", "failure analysis for speech models"],
-    "favorite":  "getting cluster-level results out of a single consumer GPU",
-    "next":      "MS in AI/ML, Fall 2028",
-}
-```
+<div align="center">
+
+| 🎓 Studying | 🔭 Researching | 🚀 Shipped | 🎯 Next |
+|:---:|:---:|:---:|:---:|
+| B.Tech IT, 3rd year<br>Manipal University Jaipur | Big-model results on a 12 GB GPU<br>Predicting failure before a model runs | MIC · MarVEN · GiWaLM<br>lm-eval-harness PR | MS in AI/ML<br>Fall 2028 |
+
+💬 **Ask me about:** LoRA on small GPUs · mode collapse · why denoisers fail
+
+</div>
 
 ---
 
-## 🔬 What I'm building
+## 🔬 What I've built
 
-### 🩻 [Medical Image Captioning](https://github.com/rana-rishith/medical-image-captioning)
-> **A radiology captioner trained in 5.5 hours on one RTX 5090.**
+### 🩻 [Medical Image Captioning](https://github.com/rana-rishith/medical-image-captioning) · `completed`
+> **A radiology captioner that trains end to end on one RTX 3060.**
 
-Frozen ViT-Base → projection MLP → Phi-2 (2.7B) with LoRA. On 500 ROCOv2 test images:
+- Frozen ViT-Base/16 → projection MLP with a learned visual gate → Phi-2 (2.7B) with LoRA
+- Only **11.15M parameters train** (under 0.5% of the model), peaking at 8.56 GiB of VRAM
+- Beats the **DS@BioMed** baseline from ImageCLEFmedical 2024, evaluated on the full 9,927-image ROCOv2 test split
+- Fixed a mode collapse where the decoder ignored the image, then proved it was really looking by feeding it zeroed images
+- Paper in preparation with faculty guide Nandani Sharma
 
-| BLEU-1 | BLEU-2 | BLEU-3 | BLEU-4 | METEOR | ROUGE-L | CIDEr |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| 0.1362 | 0.0733 | 0.0361 | 0.0187 | 0.0636 | 0.1638 | 0.1045 |
+### 🧭 [MarVEN: Failure Direction](https://github.com/rana-rishith/failure-direction) · `completed`
+> **Speech enhancement fails two opposite ways. I predict which one is coming, from the noisy input alone.**
 
-- Beats DS@BioMed on every metric, edges Kaprov on METEOR, trails CS_Morgan
-- Written up for **Springer LNCS** as an efficiency result: one consumer GPU instead of a cluster
-- Catches its own mode collapse with a **zeros-gap test**: swap the image for zeros and check whether the captions change. If they don't, the model was never looking.
-
-### 🧭 Failure Direction
-> **Speech enhancement fails in two opposite ways. I built a way to tell which one is coming.**
-
-A model either deletes the words or leaves the noise in. My reference-free index separates the two, and I'm now using it to predict the failure from the noisy input alone, including noise types the model never saw. Currently at the go/no-go gate before the prediction stage.
+- A denoiser either deletes the speech or leaves the noise in. On unseen noise, the dominant failure **flips** from the first to the second
+- Enhancement made Whisper ASR *worse* than doing nothing: **21.9% WER vs. 17.5%** on raw noisy audio
+- A reference-free LightGBM predictor beat an oracle SNR baseline in every noise type
+- Failure rankings held across two architectures (Spearman ρ 0.60–0.99), so the input decides the failure, not the model
 
 ### 🧠 GiWaLM
 > **A 125M-parameter language model, built from the tokenizer up.**
 
-Pretrained from scratch on ~1B tokens with a custom 32K BPE tokenizer. No pretrained weights, no shortcuts.
+Pretrained from scratch on ~1B tokens with a custom 32K BPE tokenizer.
 
-### 🌱 Open source: [EleutherAI lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness)
-Working on [#2256](https://github.com/EleutherAI/lm-evaluation-harness/issues/2256): making the chrF metric configurable.
+### 🌱 Open source · [EleutherAI lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness)
+[PR #4051](https://github.com/EleutherAI/lm-evaluation-harness/pull/4051) fixes [#2256](https://github.com/EleutherAI/lm-evaluation-harness/issues/2256): chrF's character and word orders become configurable from task YAML.
 
 ---
 
 ## 💼 Experience
 
 **AI Intern · Wipro** (Data Analytics & AI)
-Worked across the GCP stack: Vertex AI, BigQuery, and ML pipelines. Picked up time series, RAG, and LLMOps along the way.
+Worked on the GCP stack: Vertex AI, BigQuery, and ML pipelines, with time series, RAG and LLMOps along the way.
 
 ---
 
@@ -73,6 +73,8 @@ Worked across the GCP stack: Vertex AI, BigQuery, and ML pipelines. Picked up ti
   <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white">
   <img src="https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black">
   <img src="https://img.shields.io/badge/PEFT%2FLoRA-8A2BE2?style=flat-square&logo=pytorch&logoColor=white">
+  <img src="https://img.shields.io/badge/LightGBM-02569B?style=flat-square">
+  <img src="https://img.shields.io/badge/Whisper-412991?style=flat-square">
   <img src="https://img.shields.io/badge/RAG-FF6F00?style=flat-square">
   <img src="https://img.shields.io/badge/Computer_Vision-00A67E?style=flat-square&logo=opencv&logoColor=white">
 </p>
@@ -88,20 +90,11 @@ Worked across the GCP stack: Vertex AI, BigQuery, and ML pipelines. Picked up ti
   <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black">
   <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white">
   <img src="https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white">
-  <img src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white">
+  <img src="https://img.shields.io/badge/LM_Studio-4B5563?style=flat-square">
   <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black">
 </p>
 
 **📜 Anthropic certified:** Claude Code 101 · MCP · Agent Skills · Subagents
-
----
-
-## 📊 GitHub
-
-<div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=rana-rishith&show_icons=true&hide_border=true&title_color=D97757&icon_color=D97757&bg_color=0d1117&text_color=c9d1d9">
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rana-rishith&layout=compact&hide_border=true&title_color=D97757&bg_color=0d1117&text_color=c9d1d9">
-</div>
 
 ---
 
@@ -110,7 +103,7 @@ Worked across the GCP stack: Vertex AI, BigQuery, and ML pipelines. Picked up ti
 ### 📫 Let's talk
 
 Open to research collaborations, internships, and AI engineering roles in deep learning and multimodal AI.
-If you work on vision-language models or evaluation, I'd like to hear from you.
+If you work on vision-language models, efficient fine-tuning, or model evaluation, I'd like to hear from you.
 
 📩 [ranarishith.24@gmail.com](mailto:ranarishith.24@gmail.com) · 🔗 [LinkedIn](https://www.linkedin.com/in/rana-rishith-musunuri/)
 
