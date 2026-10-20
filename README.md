@@ -21,9 +21,7 @@
 
 <div align="center">
 
-| 🎓 Studying | 🔭 Researching | 🚀 Shipped | 🎯 Next |
-|:---:|:---:|:---:|:---:|
-| B.Tech IT, 3rd year<br>Manipal University Jaipur | Big-model results on a 12 GB GPU<br>Predicting failure before a model runs | MIC · MarVEN · GiWaLM<br>lm-eval-harness PR | MS in AI/ML<br>Fall 2028 |
+<img src="./status.svg" width="760" alt="Studying: B.Tech IT, 3rd year, Manipal University Jaipur · Next: MS in AI/ML, Fall 2028" />
 
 💬 **Ask me about:** LoRA on small GPUs · mode collapse · why denoisers fail
 
