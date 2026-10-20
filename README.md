@@ -1,8 +1,14 @@
+<p align="center">
+  <img src="./phoenix.svg" width="300" alt="Phoenix" />
+</p>
+
+<h1 align="center">Hey, I'm Rana 👋</h1>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=800&color=D97757&center=true&vCenter=true&width=600&lines=I+teach+models+to+read+X-rays.;I+predict+when+models+will+fail.;I+train+LLMs+from+scratch." alt="I teach models to read X-rays. I predict when models will fail. I train LLMs from scratch." />
+</p>
+
 <div align="center">
-
-<img src="./phoenix.svg" width="320" alt="Phoenix" />
-
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=28&duration=3000&pause=800&color=D97757&center=true&vCenter=true&width=680&lines=Hey%2C+I'm+Rana+%F0%9F%91%8B;I+teach+models+to+read+X-rays.;I+predict+when+models+will+fail.;I+train+LLMs+from+scratch." alt="Typing intro" />
 
 **B.Tech IT @ Manipal University Jaipur** · vision + language · one GPU at a time
 
