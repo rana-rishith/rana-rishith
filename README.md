@@ -8,7 +8,6 @@
 
 <a href="https://www.linkedin.com/in/rana-rishith-musunuri/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
 <a href="mailto:ranarishith.24@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
-<img src="https://komarev.com/ghpvc/?username=rana-rishith&style=for-the-badge&color=D97757&label=Profile+views">
 
 </div>
 
