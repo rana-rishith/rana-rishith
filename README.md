@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="./phoenix.svg" width="320" alt="Phoenix" />
+
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=28&duration=3000&pause=800&color=D97757&center=true&vCenter=true&width=680&lines=Hey%2C+I'm+Rana+%F0%9F%91%8B;I+teach+models+to+read+X-rays.;I+predict+when+models+will+fail.;I+train+LLMs+from+scratch." alt="Typing intro" />
 
 **B.Tech IT @ Manipal University Jaipur** · vision + language · one GPU at a time
@@ -27,29 +29,16 @@
 ## 🔬 What I've built
 
 ### 🩻 [Medical Image Captioning](https://github.com/rana-rishith/medical-image-captioning) · `completed`
-> **A radiology captioner that trains end to end on one RTX 3060.**
-
-- Frozen ViT-Base/16 → projection MLP with a learned visual gate → Phi-2 (2.7B) with LoRA
-- Only **11.15M parameters train** (under 0.5% of the model), peaking at 8.56 GiB of VRAM
-- Beats the **DS@BioMed** baseline from ImageCLEFmedical 2024, evaluated on the full 9,927-image ROCOv2 test split
-- Fixed a mode collapse where the decoder ignored the image, then proved it was really looking by feeding it zeroed images
-- Paper in preparation with faculty guide Nandani Sharma
+A radiology captioner (ViT + Phi-2 + LoRA) that trains on one 12 GB RTX 3060 and still beats the DS@BioMed baseline. Paper in preparation.
 
 ### 🧭 [MarVEN: Failure Direction](https://github.com/rana-rishith/failure-direction) · `completed`
-> **Speech enhancement fails two opposite ways. I predict which one is coming, from the noisy input alone.**
-
-- A denoiser either deletes the speech or leaves the noise in. On unseen noise, the dominant failure **flips** from the first to the second
-- Enhancement made Whisper ASR *worse* than doing nothing: **21.9% WER vs. 17.5%** on raw noisy audio
-- A reference-free LightGBM predictor beat an oracle SNR baseline in every noise type
-- Failure rankings held across two architectures (Spearman ρ 0.60–0.99), so the input decides the failure, not the model
+Denoisers either delete the speech or leave the noise in. I predict which one will happen from the noisy input alone, before the model runs.
 
 ### 🧠 GiWaLM
-> **A 125M-parameter language model, built from the tokenizer up.**
+A 125M-parameter language model pretrained from scratch on ~1B tokens, custom tokenizer included.
 
-Pretrained from scratch on ~1B tokens with a custom 32K BPE tokenizer.
-
-### 🌱 Open source · [EleutherAI lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness)
-[PR #4051](https://github.com/EleutherAI/lm-evaluation-harness/pull/4051) fixes [#2256](https://github.com/EleutherAI/lm-evaluation-harness/issues/2256): chrF's character and word orders become configurable from task YAML.
+### 🌱 [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness/pull/4051) · open source
+My PR to EleutherAI's eval harness makes the chrF metric configurable from task YAML.
 
 ---
 
