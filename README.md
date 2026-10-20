@@ -88,7 +88,26 @@ Worked on the GCP stack: Vertex AI, BigQuery, and ML pipelines, with time series
   <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black">
 </p>
 
-**📜 Anthropic certified:** Claude Code 101 · MCP · Agent Skills · Subagents
+---
+
+## 📜 Certifications
+
+**Anthropic**
+<p align="left">
+  <img src="https://img.shields.io/badge/Claude_Code_101-D97757?style=flat-square&logo=anthropic&logoColor=white">
+  <img src="https://img.shields.io/badge/MCP-D97757?style=flat-square&logo=anthropic&logoColor=white">
+  <img src="https://img.shields.io/badge/Agent_Skills-D97757?style=flat-square&logo=anthropic&logoColor=white">
+  <img src="https://img.shields.io/badge/Subagents-D97757?style=flat-square&logo=anthropic&logoColor=white">
+</p>
+
+**Udemy Business**
+<p align="left">
+  <img src="https://img.shields.io/badge/AI_Engineer_Core_Track-A435F0?style=flat-square&logo=udemy&logoColor=white">
+  <img src="https://img.shields.io/badge/LLMOps-A435F0?style=flat-square&logo=udemy&logoColor=white">
+  <img src="https://img.shields.io/badge/Python_for_Data_Science_%26_ML-A435F0?style=flat-square&logo=udemy&logoColor=white">
+  <img src="https://img.shields.io/badge/Time_Series_Analysis-A435F0?style=flat-square&logo=udemy&logoColor=white">
+  <img src="https://img.shields.io/badge/AI_Art_Masterclass-A435F0?style=flat-square&logo=udemy&logoColor=white">
+</p>
 
 ---
 
